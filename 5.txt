@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+	int num;
+	cout << "Введите порядковый номер пальца руки (счет идет слево направо):" << endl;
+	
+	cin >> num;
+
+	switch (num)
+	{
+	case 1:
+		cout << "[1]Мезинец" << endl;
+		break;
+	case 2:
+		cout << "[2]Безымянный" << endl;
+		break;
+	case 3:
+		cout << "[3]Средний" << endl;
+		break;
+	case 4:
+		cout << "[4]Указательный " << endl;
+		break;
+	case 5:
+		cout << "[5]Большой" << endl;
+		break;
+	case 6:
+		cout << "[6]Большой" << endl;
+		break;
+	case 7:
+		cout << "[7]Указательный" << endl;
+		break;
+	case 8:
+		cout << "[8]Средний" << endl;
+		break;
+	case 9:
+		cout << "[9]Безымянный" << endl;
+		break;
+	case 10:
+		cout << "[10]Мезинец" << endl;
+		break;
+	default:
+		cout << "Нет такого пальца, попоробуйте снова :)";
+		cin >> num;
+
+	}
+	return 0;
+
+}
+
