@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(0, "");
+
+	char put;
+	bool ter = true;
+
+	cout << "Введите букву из перечисленных(A,B,C,D,E):" << endl;
+	
+	do {
+
+		ter = false;
+
+		cin >> put;
+
+		switch (put)
+		{
+		case 'a':
+		case 'A':
+			cout << "Марьино";
+			cout << "Время пути занимает 35 минут" << endl;
+			break;
+		case 'b':
+		case 'B':
+			cout << "Электрозаодская";
+			cout << "Время пути занимает 30 минут" << endl;
+			break;
+		case 'c':
+		case 'C':
+			cout << "Савеловская";
+			cout << "Время пути занимает 50 минут" << endl;
+			break;
+		case 'd':
+		case 'D':
+			cout << "Новоясеневская";
+			cout << "Время пути занимает 90 минут" << endl;
+			break;
+		case 'e':
+		case 'E':
+			cout << "Волгоградский проспект";
+			cout << "Время пути занимает 30 минут" << endl;
+			break;
+		default:
+			cout << put << "-Неккореткный код" << endl;
+			cout <<  "Сделайте правильный выбор(A,B,C,D,E):" << endl;
+			ter = true;
+		}
+	} while (ter);
+	return 0;
+}
