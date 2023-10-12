@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+
+	int ter;
+
+	cout << "Ежедневник:" << endl;
+
+	cout << "[1]Понедельник:" << endl << endl;
+	cout << "[2]Вторник:" << endl << endl;
+	cout << "[3]Среда:" << endl << endl;
+	cout << "[4]Четверг:" << endl << endl;
+	cout << "[5]Пятница:" << endl << endl;
+	cout << "[6]Суббота:" << endl << endl;
+	cout << "[7]Воскрусенье:" << endl << endl;
+	cin >> ter;
+
+	switch (ter)
+
+	{
+	case 1:
+		cout << "Волейбол" << endl << endl;
+		break;
+	case 2:
+		cout << "Баскетбол" << endl << endl;
+		break;
+	case 3:
+		cout << "Треня" << endl << endl;
+		break;
+	case 4:
+		cout << "Погулять" << endl << endl;
+		break;
+	case 5:
+		cout << "Волейбол" << endl << endl;
+		break;
+	case 6:
+		cout << "Работа" << endl << endl;
+		break;
+	case 7:
+		cout << "Работа" << endl << endl;
+		break;
+	
+	}
+	return 0;
+}
+
